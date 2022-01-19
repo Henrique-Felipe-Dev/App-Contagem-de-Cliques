@@ -10,4 +10,8 @@ class MainViewModel: ViewModel() {
         number++
     }
 
+    fun resetNumber(){
+        number = 0
+    }
+
 }

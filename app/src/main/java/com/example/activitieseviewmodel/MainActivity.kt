@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         val buttonClique = findViewById<Button>(R.id.buttonClique)
+        val buttonReset = findViewById<Button>(R.id.buttonReset)
         val textCliques = findViewById<TextView>(R.id.textCliques)
 
         textCliques.text = mainViewModel.number.toString()
@@ -23,6 +24,12 @@ class MainActivity : AppCompatActivity() {
             mainViewModel.addNumber()
             textCliques.text = mainViewModel.number.toString()
         }
+
+        buttonReset.setOnClickListener {
+            mainViewModel.resetNumber()
+        }
+
+
 
     }
 }
