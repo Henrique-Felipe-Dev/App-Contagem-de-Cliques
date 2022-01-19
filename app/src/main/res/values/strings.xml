@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Activities e ViewModel</string>
+    <string name="padrao_mensagem">Tente clicar o mais rápido que puder!</string>
+    <string name="clique">Clique!</string>
+    <string name="reset">Limpar o número de Cliques</string>
+    <string name="total_de_cliques">Total de Cliques:</string>
+</resources>
